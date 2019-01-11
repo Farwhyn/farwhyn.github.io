@@ -17,6 +17,15 @@
 	
 **/
 
+document.addEventListener('DOMContentLoaded', function() {
+	var elems = document.querySelectorAll('.fixed-action-btn');
+	var modal = document.querySelectorAll('.modal');
+	var tooltips = document.querySelectorAll('.tooltipped');
+    M.Tooltip.init(tooltips, {});
+    M.Modal.init(modal, {});
+    M.FloatingActionButton.init(elems, {});
+});
+
 jQuery(function($){
 
 
@@ -24,7 +33,7 @@ jQuery(function($){
 	/*  1. Mobile MENU
 	/* ----------------------------------------------------------- */
 
-    jQuery(".button-collapse").sideNav();
+	// jQuery(".button-collapse").sideNav();
     
 	/* ----------------------------------------------------------- */
 	/*  2. Experience SLider(Owl Carousel)

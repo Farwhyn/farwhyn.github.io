@@ -6,9 +6,9 @@
       <title>James Zhou</title>
 
       <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-      <link rel="apple-touch-icon" href="img/touch-icon-iphone.png" />
+      <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
        <!-- CSS  -->      
-      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <!-- Font Awesome -->
       <link href="css/font-awesome.css" rel="stylesheet">
       <!-- Skill Progress Bar -->
@@ -41,20 +41,15 @@
                 <!-- LOGO -->
 
                 <!-- TEXT BASED LOGO -->
-                <a href="#" class="brand-logo">James Zhou</a>
+                <a class="brand-logo center">James Zhou</a>
 
                 <!-- Image Based Logo -->                
                  <!-- <a href="index.html" class="brand-logo"><img src="img/logo.jpeg" alt="logo img"></a>  -->
-                <ul class="right hide-on-med-and-down custom-nav menu-scroll">
+                <!--<ul class="right hide-on-med-and-down custom-nav menu-scroll">
+                    <li><a href="#about">About Me</a></li>
                   <li><a href="#resume">Skills</a></li>
                   <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-                <!-- For Mobile View -->
-                <ul id="slide-out" class="side-nav menu-scroll">
-                  <li><a href="#resume">Skills</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                </ul>
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                </ul>-->
               </div>
             </div>
           </nav>
@@ -69,10 +64,11 @@
                 <div class="row">
                   <div class="col s12">
                     <div class="home-inner">
-                      <img class="circle profile-img" src="img/best.jpg" alt="Profile Image">
-                      <p>Hello! I'm currently a 5th year undergraduate Computer Engineering student at UBC, looking for full-time opportunities starting May 2019. 
-						In my spare time I like to make interesting projects, and you can check them out below. Thanks for stopping by!
-					  </p>
+                      <h3 class="home-title">Welcome to my Website!</h3>
+                      <p>
+                        Hello, and thank you for stopping by! My name is James and I'm really passionate about basketball, 
+                        badminton, and software development. Please check out some of my projects below, and feel free to connect with me on social media!
+                      </p>
                       <!-- <a class="hire-me-btn btn waves-effect waves-light btn-large" href="#footer">Hire Me <i class="mdi-content-send left"></i>                     
                       </a> -->
                       <div class="row">
@@ -89,53 +85,49 @@
               </div>
             </div>
           </section>
-          <!-- Start Resume -->
-          <section id="resume">
-            <!-- Start Skill -->
-            <section id="skill">
-              <div class="container">
-                <div class="skill-inner">
-                  <h2 class="title">Skills</h2>
-
-                  <!-- Start skills progress bar -->
-
-                  <div class="skill-progress-bar">
-                    <span>JavaScript</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-100 color-amethyst" data-pro-bar-percent="100"></div>
-                    </div>
-                    <span>Python</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-90 color-amethyst" data-pro-bar-percent="90" data-pro-bar-delay="100"></div>
-                    </div>
-                    <span>Java</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-80 color-amethyst" data-pro-bar-percent="80" data-pro-bar-delay="200"></div>
-                    </div>
-                    <span>C#</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-70 color-amethyst" data-pro-bar-percent="70" data-pro-bar-delay="300"></div>
-                    </div>
-                    <span>C</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-60 color-amethyst" data-pro-bar-percent="60" data-pro-bar-delay="400"></div>
-                    </div>
-                    <span>SQL</span>
-                    <div class="pro-bar-container color-wisteria">
-                      <div class="pro-bar bar-50 color-amethyst" data-pro-bar-percent="50" data-pro-bar-delay="500"></div>
+           <!-- START ABOUT SECTION -->
+           <section id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col s12">
+                  <div class="about-inner">
+                    <div class="row">
+                      <div class="col s12 m4 l3">
+                        <div class="about-inner-left">
+                          <img class="circle profile-img" src="img/best.jpg" alt="Profile Image">
+                        </div>
+                      </div>
+                      <div class="col s12 m8 l0">
+                        <div class="about-inner-right">
+                            <div class="card blue-grey darken-1">
+                                <div class="card-content white-text">
+                                  <span class="card-title">About Me</span>
+                                  <p>
+                                    I'm a 5th year Undergraduate Student studying Computer Engineering at UBC Vancouver, expecting to graduate in May 2019, 
+                                    and I'm currently looking for full time job opportunities. I have work experience at <i>BC Cancer Agency</i> and <i>Statistics Canada</i>,
+                                    and I'm interested in Full Stack Web Development, Embedded Systems, Mobile Application Development, and Data Science. 
+                                  </p>
+                                </div>
+                                <div class="center card-action">
+                                  <!--<a target="_blank" rel="noopener noreferrer" href="https://www.dropbox.com/s/mvimzsck1gpp60z/developer_resume.docx?dl=0">Resume</a>-->
+                                  <a class="modal-trigger" href="#modalresume">Resume</a>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
+            </div>
           </section>
           <!-- Start Portfolio -->
           <section id="portfolio">
             <div class="portfolio-top">
               <div class="container">
                 <div class="portfolio-top-inner">
-                   <h2 class="title">Portfolio</h2>
-                   <div class="controls">  
+                   <h2 class="center title">Portfolio</h2>
+                   <div class="center controls">  
                     <button class="filter waves-effect waves-light btn" data-filter="all">All</button>
                     <button class="filter waves-effect waves-light btn" data-filter=".hardware">Hardware</button>
                     <button class="filter waves-effect waves-light btn" data-filter=".web">Web</button>
@@ -147,33 +139,33 @@
             <div class="portfolio-bottom">
               <div class="container">
                 <div class="portfolio-bottom-inner">
-                  <div id="portfolio-list">                    
+                  <div id="portfolio-list">                   
                     <div class="mix hardware" data-value="2">
-                      <a href="#">
+                      <a href="#!">
                         <img src="img/portfolio/m2m.jpg" alt="img">
-                        <<i class="material-icons view-icon">pageview</i>>
+                        <i class="material-icons view-icon">pageview</i>
                       </a>
                     </div>
                     <div class="mix web" data-value="4">
-                      <a href="#">
+                      <a href="#!">
                         <img src="img/portfolio/screenshots.gif" alt="img">
                         <i class="material-icons view-icon">pageview</i>           
                       </a>
                     </div>
                     <div class="mix hardware" data-value="1">
-                      <a href="#">
+                      <a href="#!">
                         <img src="img/portfolio/scanner.jpg" alt="img">
                         <i class="material-icons view-icon">pageview</i>
                       </a>
                     </div>
                     <div class="mix web" data-value="5">
-                      <a href="#">
+                      <a href="#!">
                         <img src="img/portfolio/brain.jpg" alt="img">
                         <i class="material-icons view-icon">pageview</i>
                       </a>
                     </div>
                     <div class="mix mobile" data-value="3">
-                      <a href="#">
+                      <a href="#!">
                         <img src="img/portfolio/timetrip.png" alt="img">
                         <i class="material-icons view-icon">pageview</i>
                       </a>
@@ -193,9 +185,7 @@
                 <div class="row">
                   <div class="col s12">
                     <div class="footer-inner">
-                      <!-- Bottom to Up Btn -->
-                      <button class="btn-floating btn-large up-btn"><i class="mdi-navigation-expand-less"></i></button>
-                     <p class="design-info">&copy; 2019 James Zhou</a></p>
+                     <p class="design-info"><b>&copy; 2019 JAMES ZHOU, ALL RIGHTS RESERVED</b></p>
                     </div>
                   </div>
                 </div>
@@ -204,11 +194,30 @@
           </footer>
         </main>
       </div>
+
+      <div id="modalresume" class="modal">
+        <div class="modal-content">
+            <h5 style="font-size: 30px">Resume</h5>
+            <embed src="developer_resume.pdf" type="application/pdf" width="100%" height="400px" />
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+      </div>
+
+      <!-- FIXED ACTION BUTTON -->
+      <div class="fixed-action-btn">
+        <a href = "#" class="btn-floating red btn-large"><i class="large material-icons">expand_less</i></a>
+        <ul>
+          <li><a href='#about' class="btn-floating yellow btn-large tooltipped" data-position="left" data-tooltip="About Me"><i class="large material-icons">info</i></a></li>
+          <li><a href='#portfolio' class="btn-floating blue btn-large tooltipped" data-position="left" data-tooltip="Portfolio"><i class="large material-icons">laptop</i></a></li>
+        </ul>
+      </div>
       <!-- jQuery Library -->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
       <!-- Materialize js -->
-      <script src="js/materialize.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <!-- Skill Progress Bar -->
       <script src="js/appear.min.js" type="text/javascript"></script>
       <script src="js/pro-bars.min.js" type="text/javascript"></script>
@@ -221,6 +230,6 @@
       <script src="js/jquery.counterup.min.js"></script>     
 
       <!-- Custom Js -->
-      <script src="js/custom.js"></script>      
+      <script src="js/index.js"></script>      
     </body>
   </html>

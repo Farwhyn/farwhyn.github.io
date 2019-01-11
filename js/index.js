@@ -20,8 +20,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.fixed-action-btn');
 	var modal = document.querySelectorAll('.modal');
-	var tooltips = document.querySelectorAll('.tooltipped');
-    M.Tooltip.init(tooltips, {});
     M.Modal.init(modal, {});
     M.FloatingActionButton.init(elems, {});
 });
